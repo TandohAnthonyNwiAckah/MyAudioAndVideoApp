@@ -26,8 +26,6 @@
 
 - [x]  Add download Preloaded fonts
 
-- [x]  WOrk on UI/UX
-
-- [ ] Custom domain and ssl.
+- [x]  Work on UI/UX
 
 
