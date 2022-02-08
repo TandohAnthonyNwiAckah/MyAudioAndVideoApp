@@ -22,10 +22,10 @@
 
 # To Add Features
 
-- [x]  Upload recording data to the Cloud.
+- [ ]  Upload recording data to the Cloud.
 
-- [x]  Add download Preloaded fonts
+- [ ]  Add download Preloaded fonts
 
-- [x]  Work on UI/UX
+- [ ]  Work on UI/UX
 
 
