@@ -25,7 +25,6 @@ import com.google.android.material.appbar.AppBarLayout
 import kotlinx.android.synthetic.main.app_bar.*
 
 
-//todo: Add Splash Intro Screen before MainActivity
 class MainActivity : AppCompatActivity() {
 
     private var myLayoutManager: RecyclerView.LayoutManager? = null
@@ -46,6 +45,10 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
+    /**
+     * Initiate Function
+     * */
     private fun init() {
         Log.d(TAG, "init: ")
 
@@ -65,14 +68,10 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-
-    override fun onBackPressed() {
-        Log.d(TAG, "onBackPressed: ")
-
-        this@MainActivity.finish()
-    }
-
     @TargetApi(Build.VERSION_CODES.M)
+    /**
+     * Permissiom Function
+     * */
     private fun perm() {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -194,6 +193,14 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
+    /**
+     * OnBackpressed Function
+     * */
+    override fun onBackPressed() {
+        Log.d(TAG, "onBackPressed: ")
+
+        this@MainActivity.finish()
+    }
 }
 
 
