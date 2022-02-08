@@ -29,19 +29,30 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/backdrop"
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lott"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:fitsSystemWindows="true"
-                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
                     app:layout_collapseMode="parallax"
-                    tools:ignore="ContentDescription" />
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/cover" />
+
+                <!--                <androidx.appcompat.widget.AppCompatImageView-->
+                <!--                    android:id="@+id/backdrop"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:fitsSystemWindows="true"-->
+                <!--                    android:scaleType="centerCrop"-->
+                <!--                    app:layout_collapseMode="parallax"-->
+                <!--                    tools:ignore="ContentDescription" />-->
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
                     android:gravity="center_horizontal"
                     android:orientation="vertical">
 
@@ -53,7 +64,7 @@
                         android:text="@string/app_name"
                         android:textColor="@color/white"
                         android:textSize="28sp"
-                        android:textStyle="bold"
+                        android:textStyle="normal"
                         tools:targetApi="jelly_bean" />
 
                 </LinearLayout>

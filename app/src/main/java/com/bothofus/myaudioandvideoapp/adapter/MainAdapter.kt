@@ -12,13 +12,20 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bothofus.myaudioandvideoapp.R
 import com.bothofus.myaudioandvideoapp.model.MainModel
+import com.bothofus.myaudioandvideoapp.ui.PlayVideo
 import com.bothofus.myaudioandvideoapp.ui.RecordActivity
 import com.bothofus.myaudioandvideoapp.ui.RecordListActivity
+import com.bothofus.myaudioandvideoapp.ui.VideoActivity
 import java.util.*
 
 
 // TODO: Add pre loaded fonts
-
+/***
+@Developer: Tandoh Anthony Nwi-Ackah
+@Email : anthony.tandoh@tanacom.io
+@AppName: MyAudioAndVideoApp
+@Country: GHANA
+ **/
 class MainAdapter : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
 
     private val myList: MutableList<MainModel>
@@ -34,6 +41,16 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
         mod = MainModel()
         mod.name = R.string.playdaudio
         mod.logo = R.drawable.ic_playlist
+        myList.add(mod)
+
+        mod = MainModel()
+        mod.name = R.string.recordvideo
+        mod.logo = R.drawable.ic_video
+        myList.add(mod)
+
+        mod = MainModel()
+        mod.name = R.string.playvideo
+        mod.logo = R.drawable.ic_play_video
         myList.add(mod)
 
 
@@ -72,9 +89,10 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
                 var intent: Intent? = null
 
                 when (position) {
-
                     0 -> intent = Intent(context, RecordActivity::class.java)
                     1 -> intent = Intent(context, RecordListActivity::class.java)
+                    2 -> intent = Intent(context, VideoActivity::class.java)
+                    3 -> intent = Intent(context, PlayVideo::class.java)
 
 
                 }

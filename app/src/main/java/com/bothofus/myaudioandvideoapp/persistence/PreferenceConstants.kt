@@ -1,4 +1,4 @@
-package com.bothofus.myaudioandvideoapp.model
+package com.bothofus.myaudioandvideoapp.persistence
 
 
 /***
@@ -7,9 +7,9 @@ package com.bothofus.myaudioandvideoapp.model
 @AppName: MyAudioAndVideoApp
 @Country: GHANA
  **/
-class MainModel {
-    var name: Int = 0
-    var logo: Int = 0
-}
+object PreferenceConstants {
 
+    val VIDEO_URL = "video_url"
+
+}
 

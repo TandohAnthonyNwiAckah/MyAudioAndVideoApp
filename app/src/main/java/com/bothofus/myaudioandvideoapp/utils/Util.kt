@@ -5,7 +5,12 @@ import android.widget.Toast
 import java.text.SimpleDateFormat
 import java.util.*
 
-
+/***
+@Developer: Tandoh Anthony Nwi-Ackah
+@Email : anthony.tandoh@tanacom.io
+@AppName: MyAudioAndVideoApp
+@Country: GHANA
+ **/
 object Util {
 
     fun formatTime(time: Int): String {

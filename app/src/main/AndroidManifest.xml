@@ -19,6 +19,11 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
     <application
         android:name="com.bothofus.myaudioandvideoapp.App"
         android:allowBackup="true"
@@ -84,6 +89,25 @@
             android:exported="true"
             android:theme="@style/dia" />
 
+        <!--VIDEORECORDACTIVITY-->
+        <activity
+            android:name=".ui.VideoActivity"
+            android:exported="true"
+            android:theme="@style/dia">
+
+        </activity>
+
+        <!-- VIDEOACTIVITY-->
+        <activity
+            android:name=".ui.PlayVideo"
+            android:exported="true"
+            android:theme="@style/ToolBar">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainActivity" />
+
+        </activity>
 
         <!-- PROVIDER-->
         <provider
