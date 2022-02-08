@@ -12,6 +12,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bothofus.myaudioandvideoapp.R
 import com.bothofus.myaudioandvideoapp.model.MainModel
+import com.bothofus.myaudioandvideoapp.ui.RecordActivity
 import java.util.*
 
 
@@ -65,9 +66,7 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
 
                 when (position) {
 
-                    0 -> {
-
-                    }
+                    0 -> intent = Intent(context, RecordActivity::class.java)
 
                 }
                 context.startActivity(intent)
