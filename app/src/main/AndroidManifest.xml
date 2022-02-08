@@ -66,6 +66,25 @@
 
         </activity>
 
+        <!-- RECORDLISTACTIVITY-->
+        <activity
+            android:name=".ui.RecordListActivity"
+            android:exported="true"
+            android:theme="@style/ToolBar">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainActivity" />
+
+        </activity>
+
+        <!--RECORDPLAYACTIVITY-->
+        <activity
+            android:name=".ui.RecordPlayActivity"
+            android:exported="true"
+            android:theme="@style/dia" />
+
+
         <!-- PROVIDER-->
         <provider
             android:name=".persistence.Provider"

@@ -9,5 +9,7 @@
     <string name="strange">Unhandled error instance</string>
     <string name="max_duration">Maximum duration reached</string>
     <string name="max_size">Maximum file size reached</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_share">Share</string>
 
 </resources>

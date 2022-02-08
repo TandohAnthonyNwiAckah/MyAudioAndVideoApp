@@ -23,6 +23,8 @@ import com.bothofus.myaudioandvideoapp.persistence.Provider
 import com.bothofus.myaudioandvideoapp.utils.Constants
 import com.bothofus.myaudioandvideoapp.utils.Constants.FOLDER
 import com.bothofus.myaudioandvideoapp.utils.Constants.MAX_DURATION
+import com.bothofus.myaudioandvideoapp.utils.Util.formatTime
+import com.bothofus.myaudioandvideoapp.utils.Util.initToast
 import kotlinx.android.synthetic.main.activity_record.*
 import java.io.File
 
@@ -121,12 +123,11 @@ class RecordActivity : AppCompatActivity(), MediaRecorder.OnErrorListener,
                     if (!File(AUDIO).exists()) {
 
                         if (!File(AUDIO).mkdirs()) {
-                            Toast.makeText(
-                                this@RecordActivity,
-                                "Failed to create folder",
-                                Toast.LENGTH_SHORT
-                            )
-                                .show()
+
+
+                            initToast(this@RecordActivity, "Failed to create folder")
+
+
                             return
                         }
                     }
@@ -269,20 +270,5 @@ class RecordActivity : AppCompatActivity(), MediaRecorder.OnErrorListener,
             .show()
     }
 
-    fun formatTime(time: Int): String {
-        val hour =
-            if (Integer.toString(time / (1000 * 60 * 60)).length == 1) "0" + Integer.toString(time / (1000 * 60 * 60)) else Integer.toString(
-                time / (1000 * 60 * 60)
-            )
-        val minute =
-            if (Integer.toString(time / (1000 * 60) % 60).length == 1) "0" + Integer.toString(time / (1000 * 60) % 60) else Integer.toString(
-                time / (1000 * 60) % 60
-            )
-        val second =
-            if (Integer.toString(time / 1000 % 60).length == 1) "0" + Integer.toString(time / 1000 % 60) else Integer.toString(
-                time / 1000 % 60
-            )
-        return "$hour:$minute:$second"
-    }
 
 }

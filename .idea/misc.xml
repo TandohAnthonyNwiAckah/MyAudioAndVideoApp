@@ -3,12 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_arrow_left.xml" value="0.2671875" />
+        <entry key="app/src/main/res/drawable/ic_playlist.xml" value="0.2671875" />
+        <entry key="app/src/main/res/drawable/ic_record.xml" value="0.2671875" />
+        <entry key="app/src/main/res/drawable/ic_recorder.xml" value="0.2671875" />
+        <entry key="app/src/main/res/drawable/ic_sekpro.xml" value="0.2671875" />
+        <entry key="app/src/main/res/drawable/ic_stop.xml" value="0.2671875" />
+        <entry key="app/src/main/res/drawable/ic_touch_selector.xml" value="0.2671875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2520852641334569" />
+        <entry key="app/src/main/res/layout/activity_record.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/layout/activity_record_list.xml" value="0.128125" />
         <entry key="app/src/main/res/layout/activity_slash.xml" value="0.25104166666666666" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_video_record.xml" value="0.25104166666666666" />
         <entry key="app/src/main/res/layout/app_bar.xml" value="0.25104166666666666" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.2351851851851852" />
         <entry key="app/src/main/res/layout/item_main.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/layout/item_records.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/layout/playe.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/layout/record_frag.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/menu/audio_frag.xml" value="0.25104166666666666" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.25104166666666666" />
       </map>
     </option>

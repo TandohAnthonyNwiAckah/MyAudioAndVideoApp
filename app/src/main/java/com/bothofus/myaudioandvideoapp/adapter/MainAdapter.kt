@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bothofus.myaudioandvideoapp.R
 import com.bothofus.myaudioandvideoapp.model.MainModel
 import com.bothofus.myaudioandvideoapp.ui.RecordActivity
+import com.bothofus.myaudioandvideoapp.ui.RecordListActivity
 import java.util.*
 
 
@@ -27,8 +28,14 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
 
         var mod = MainModel()
         mod.name = R.string.recordaudio
-        mod.logo = R.drawable.ic_record_logo
+        mod.logo = R.drawable.ic_recorder
         myList.add(mod)
+
+        mod = MainModel()
+        mod.name = R.string.playdaudio
+        mod.logo = R.drawable.ic_playlist
+        myList.add(mod)
+
 
     }
 
@@ -67,6 +74,8 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
                 when (position) {
 
                     0 -> intent = Intent(context, RecordActivity::class.java)
+                    1 -> intent = Intent(context, RecordListActivity::class.java)
+
 
                 }
                 context.startActivity(intent)
